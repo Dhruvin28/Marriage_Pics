@@ -2,7 +2,7 @@ import os
 import json
 
 # Specify the folder path
-folder_path = 'C:\\Dhruvin And Milu Marriage\\Marriage_Pics\\Milu Mehndi\\Nikunjbhai JPEG'
+folder_path = './'
 
 # Get the list of all files in the folder
 file_names = [file for file in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, file))]
