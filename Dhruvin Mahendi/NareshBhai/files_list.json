@@ -1,40 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Milu Mahendi</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .gallery img {
-      max-width: 300px;
-      height: auto;
-      border: 2px solid #ddd;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-  </style>
-</head>
-<body>
-
-  <h1>Image Gallery</h1>
-  <div class="gallery" id="gallery"></div>
-
-  <script>
-    // Function to dynamically load images
-    function loadImages() {
-      const gallery = document.getElementById('gallery');
-      const imagesFolder = './';  // Folder where your images are located
-      
-      // A list of image file names in the folder
-      const imageFiles = [
+[
         "DSC00545.JPG",
         "DSC00546.JPG",
         "DSC00547.JPG",
@@ -211,20 +175,4 @@
         "DSC00722.JPG",
         "DSC00723.JPG",
         "DSC00724.JPG"
-    ];
-      
-      // Loop through each image file and create an img element for each
-      imageFiles.forEach(image => {
-        const imgElement = document.createElement('img');
-        imgElement.src = imagesFolder + image;
-        imgElement.alt = image;
-        gallery.appendChild(imgElement);
-      });
-    }
-
-    // Load the images when the page loads
-    window.onload = loadImages;
-  </script>
-
-</body>
-</html>
+    ]
